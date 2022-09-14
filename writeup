@@ -1,0 +1,19 @@
+# emailvalidation-project
+Given a string, find if the given string is a valid email or not.
+Input : email = review-team@geeksforgeeks.org
+Input : email = 27patilashwini@gmail.com
+Input : email = snehasanhotra1@gmail.com
+Output : Yes
+
+Input : email = contribute@geeksforgeeks..org
+Input : email = mahasansandip.@org
+Output : No
+Explanation : There is an extra dot(.) and after dot (@) before org.
+
+REGULAE EXPRESSION:-
+Regular Expressions or Regex is an API for defining String patterns that can be used for searching, manipulating, and editing a string in Java. Email validation and passwords are a few areas of strings where Regex is widely used to define the constraints. Regular Expressions are provided under java.util.regex package. 
+In order to check that an email address is valid or not, we use the below-given regular expression provided in the  Validation Regex repository.
+^[a-zA-Z0-9_+&*-] + (?:\\.[a-zA-Z0-9_+&*-]
++ )*@(?:[a-zA-Z0-9-]+\\.) + [a-zA-Z]{2, 7}$ 
+
+
